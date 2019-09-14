@@ -10,6 +10,5 @@ public class TestIntegerMatrix {
         integerMatrix.printResult(m1,m2,integerMatrix.addMatrix(m1,m2),'+');
         System.out.println("m1*m2=");
         integerMatrix.printResult(m1,m2,integerMatrix.multiplyMatrix(m1,m2),'x');
-
     }
 }

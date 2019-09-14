@@ -1,18 +1,19 @@
 package com.xxh.Generic;
 
-public class RationalMatrix extends GenericMatrix{
+public class RationalMatrix extends GenericMatrix<Rational>{
+
     @Override
-    protected Number add(Number element1, Number element2) {
-        return null;
+    protected Rational add(Rational element1, Rational element2) {
+        return element1.add(element2);
     }
 
     @Override
-    protected Number multiply(Number element1, Number element2) {
-        return null;
+    protected Rational multiply(Rational element1, Rational element2) {
+        return element1.multiply(element2);
     }
 
     @Override
-    protected Number zero() {
-        return null;
+    protected Rational zero() {
+        return new Rational();
     }
 }
